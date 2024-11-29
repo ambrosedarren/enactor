@@ -9,42 +9,44 @@
     <packaging>war</packaging>
 
     <dependencies>
-        <!-- JAX-RS API -->
-        <dependency>
-            <groupId>jakarta.ws.rs</groupId>
-            <artifactId>jakarta.ws.rs-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-        <!-- Jersey JAX-RS implementation -->
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet</artifactId>
-            <version>3.1.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.inject</groupId>
-            <artifactId>jersey-hk2</artifactId>
-            <version>3.1.9</version>
-        </dependency>
-        <!-- Swagger Annotations -->
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>2.2.24</version>
-        </dependency>
-        <!-- JSON Binding -->
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-binding</artifactId>
-            <version>3.1.9</version>
-        </dependency>
-        <dependency>
-    <groupId>jakarta.servlet</groupId>
-    <artifactId>jakarta.servlet-api</artifactId>
-    <version>5.0.0</version> 
-    <scope>provided</scope>
-</dependency>
-    </dependencies>
+    <!-- JAX-RS API for RESTful web services -->
+    <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <version>3.1.0</version>
+    </dependency>
+    <!-- Jersey implementation of JAX-RS specification to enable RESTful endpoints -->
+    <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-servlet</artifactId>
+        <version>3.1.9</version>
+    </dependency>
+    <!-- Dependency injection support for Jersey -->
+    <dependency>
+        <groupId>org.glassfish.jersey.inject</groupId>
+        <artifactId>jersey-hk2</artifactId>
+        <version>3.1.9</version>
+    </dependency>
+    <!-- Swagger annotations for documenting REST APIs -->
+    <dependency>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>2.2.24</version>
+    </dependency>
+    <!-- JSON binding support for Jersey to convert Java objects to JSON and vice versa -->
+    <dependency>
+        <groupId>org.glassfish.jersey.media</groupId>
+        <artifactId>jersey-media-json-binding</artifactId>
+        <version>3.1.9</version>
+    </dependency>
+    <!-- Servlet API for web applications on a servlet container (Tomcat) -->
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>5.0.0</version> 
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
     <build>
             <!-- Maven Compiler Plugin -->
            <plugins>
