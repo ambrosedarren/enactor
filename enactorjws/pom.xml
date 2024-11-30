@@ -9,7 +9,7 @@
     <packaging>war</packaging>
 
     <dependencies>
-    <!-- JAX-RS API for RESTful web services -->
+    <!-- JAX-RS API for RESTful web services providing standard interfaces and annotations -->
     <dependency>
         <groupId>jakarta.ws.rs</groupId>
         <artifactId>jakarta.ws.rs-api</artifactId>
