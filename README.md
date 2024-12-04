@@ -6,7 +6,7 @@ REST API
 
 Endpoints
 
-/api/datetime/string: Returns the current date and time as a plain string.
+/api/datetime/string: Returns the current date and time as a plain string.<br>
 /api/datetime/json: Returns the current date and time in JSON format.
 
 Swagger Integration
