@@ -1,43 +1,68 @@
-swagger: '2.0'
-info:
-  version: 1.0.0
-  title: DateTime API
-  description: API to fetch the current date and time in string or JSON format.
-host: localhost:8080
-basePath: /enactorjws/api
-schemes:
-  - http
-paths:
-  /datetime/string:
-    get:
-      summary: Get current date and time as a string
-      description: Returns the current date and time in the format yyyy-MM-dd HH:mm:ss.
-      produces:
-        - text/plain
-      responses:
-        '200':
-          description: Successful response
-          schema:
-            type: string
-        '500':
-          description: Internal server error
-  /datetime/json:
-    get:
-      summary: Get current date and time as JSON
-      description: Returns the current date and time in JSON format.
-      produces:
-        - application/json
-      responses:
-        '200':
-          description: Successful response
-          schema:
-            $ref: '#/definitions/DateTime'
-        '500':
-          description: Internal server error
-definitions:
-  DateTime:
-    type: object
-    properties:
-      currentDate:
-        type: string
-        description: The current date and time in the format yyyy-MM-dd HH:mm:ss
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "DateTime API",
+    "description": "API to fetch the current date and time in string or JSON format."
+  },
+  
+  "host": "localhost:8080",
+  "basePath": "/enactorjws/api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/datetime/string": {
+      "get": {
+        "summary": "Get current date and time as a string",
+        "description": "Returns the current date and time in the format yyyy-MM-dd HH:mm:ss.",
+        "produces": [
+          "text/plain"
+        ],
+        
+ "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/datetime/json": {
+      "get": {
+        "summary": "Get current date and time as JSON",
+        "description": "Returns the current date and time in JSON format.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/DateTime"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "DateTime": {
+      "type": "object",
+      "properties": {
+        "currentDate": {
+          "type": "string",
+          "description": "The current date and time in the format yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  }
+}
