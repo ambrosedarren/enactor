@@ -1,3 +1,16 @@
+DateTime REST API with Swagger Integration and Java Swing App
+
+This project is a REST API to fetch the current date and time and a Java Swing application that acts as a client to fetch and display the date and time from the API.
+
+Technologies Used
+
+Java: Core programming language.
+Jakarta EE (JAX-RS): RESTful API framework.
+Swagger: For API documentation and testing.
+Java Swing: For building the desktop client.
+Tomcat 10.1: Servlet container.
+Maven: Build automation tool.
+
 REST API
 
 Endpoints
